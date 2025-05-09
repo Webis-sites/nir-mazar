@@ -1,0 +1,7 @@
+
+    # robots.txt for ניר מזר מורה לנהיגה
+    User-agent: *
+    Allow: /
+
+    # Sitemap
+    Sitemap: https://ניר-מזר-מורה-לנהיגה.com/sitemap.xml
