@@ -1,11 +1,78 @@
 {
-  "timestamp": "2025-05-09T15:28:29.117Z",
+  "timestamp": "2025-05-09T15:29:14.646Z",
   "status": {
-    "totalComponents": 0,
+    "totalComponents": 11,
     "completedComponents": 0,
     "failedComponents": 0,
     "progress": 0
   },
-  "components": [],
+  "components": [
+    {
+      "name": "Layout",
+      "type": "layout",
+      "status": "pending",
+      "description": "Root layout component with metadata and global styles"
+    },
+    {
+      "name": "Navbar",
+      "type": "navigation",
+      "status": "pending",
+      "description": "RTL navigation bar with the driving instructor's name and links to page sections"
+    },
+    {
+      "name": "HeroSection",
+      "type": "hero",
+      "status": "pending",
+      "description": "Main hero section with headline, description and call to action for driving lessons"
+    },
+    {
+      "name": "AboutSection",
+      "type": "about",
+      "status": "pending",
+      "description": "Section about Nir Mazar as a driving instructor, his experience and teaching philosophy"
+    },
+    {
+      "name": "ServicesSection",
+      "type": "services",
+      "status": "pending",
+      "description": "Section detailing the driving instruction services offered"
+    },
+    {
+      "name": "ProcessSection",
+      "type": "process",
+      "status": "pending",
+      "description": "Section explaining the learning process for new drivers"
+    },
+    {
+      "name": "TestimonialsSection",
+      "type": "testimonials",
+      "status": "pending",
+      "description": "Section showcasing testimonials from satisfied students"
+    },
+    {
+      "name": "FAQSection",
+      "type": "faq",
+      "status": "pending",
+      "description": "Frequently asked questions about driving lessons"
+    },
+    {
+      "name": "ContactSection",
+      "type": "contact",
+      "status": "pending",
+      "description": "Contact form section for booking trial lessons"
+    },
+    {
+      "name": "CTASection",
+      "type": "cta",
+      "status": "pending",
+      "description": "Call-to-action section encouraging visitors to book a trial lesson"
+    },
+    {
+      "name": "Footer",
+      "type": "footer",
+      "status": "pending",
+      "description": "Page footer with copyright and additional links"
+    }
+  ],
   "repoName": "webis-site-nyr-mzr-mvrh-lnhygh-1746804451173"
 }
