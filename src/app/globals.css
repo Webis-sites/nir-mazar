@@ -42,6 +42,8 @@
   --neumorphic-bg: linear-gradient(145deg, #f0f4f8, #e6eaee);
   --button-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.1);
   --button-shadow-pressed: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+
+  --neumorphic-shadow-dark: rgba(0, 0, 0, 0.1);
 }
 
     html {
