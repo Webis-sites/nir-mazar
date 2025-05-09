@@ -35,6 +35,8 @@
   --shadow-color: rgba(59, 130, 246, 0.3);
 
   --shadow-dark: rgba(0, 0, 0, 0.1);
+
+  --font-size-base: 1rem;
 }
 
     html {
