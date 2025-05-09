@@ -1,8 +1,11 @@
 {
-  "projectName": "ניר-מזר-מורה-לנהיגה-4451",
-  "businessName": "ניר מזר מורה לנהיגה",
-  "created": "2025-05-09T15:27:31.519Z",
-  "status": "initialized",
-  "progress": 0,
-  "components": []
+  "timestamp": "2025-05-09T15:28:29.117Z",
+  "status": {
+    "totalComponents": 0,
+    "completedComponents": 0,
+    "failedComponents": 0,
+    "progress": 0
+  },
+  "components": [],
+  "repoName": "webis-site-nyr-mzr-mvrh-lnhygh-1746804451173"
 }
