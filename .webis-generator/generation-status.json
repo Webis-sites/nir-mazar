@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-05-09T15:46:54.098Z",
+  "projectDir": "ניר-מזר-מורה-לנהיגה-4451",
   "status": {
     "totalComponents": 11,
-    "completedComponents": 10,
+    "completedComponents": 11,
     "failedComponents": 0,
-    "progress": 91
+    "progress": 100
   },
   "components": [
     {
@@ -70,9 +70,14 @@
     {
       "name": "Footer",
       "type": "footer",
-      "status": "pending",
+      "status": "completed",
       "description": "Page footer with copyright and additional links"
     }
   ],
-  "repoName": "webis-site-nyr-mzr-mvrh-lnhygh-1746804451173"
+  "tokenUsage": {
+    "totalInputTokens": 21419,
+    "totalOutputTokens": 28337,
+    "totalTokens": 49756,
+    "requests": 11
+  }
 }
