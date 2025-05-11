@@ -95,7 +95,7 @@ const AboutSection: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <img
-                    src="/nir mazar photo/abbead6c-2432-4515-9322-97dc5c8c5ef4.JPG"
+                    src="/nir mazar photo/ניר אורך.JPG"
                     alt="ניר מזר - מורה לנהיגה באשדוד"
                     className="w-full h-full object-cover"
                   />
@@ -166,8 +166,14 @@ const AboutSection: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-soft transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                  צור קשר לשיעור ניסיון
+                <button
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-soft transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact-section');
+                    if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  לשיעור ניסיון - צרו קשר
                 </button>
               </motion.div>
             </motion.div>

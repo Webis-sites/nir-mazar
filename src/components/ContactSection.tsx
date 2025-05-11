@@ -35,19 +35,19 @@ export default function ContactSection() {
           <input name="phone" type="tel" placeholder="טלפון" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" required />
           <input name="email" type="email" placeholder="אימייל (לא חובה)" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" />
           <textarea name="message" placeholder="הודעה" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" rows={4} required />
-          <button type="submit" className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 rounded-lg transition-all">
-            שלח
+          <button
+            type="submit"
+            className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 rounded-full text-lg shadow-xl transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 hover:scale-105 hover:shadow-[0_0_0_4px_#3b82f6aa,0_8px_32px_0_rgba(31,38,135,0.18)]"
+          >
+            שלח פרטים
           </button>
         </form>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <a href="https://wa.me/972537717397" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-bold transition-all">
-            <FaWhatsapp className="text-xl" /> וואטסאפ ישיר
+        <div className="flex items-center justify-center gap-6 mt-4">
+          <a href="https://wa.me/972537717397" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white text-2xl shadow-lg transition-all" aria-label="וואטסאפ">
+            <FaWhatsapp />
           </a>
-          <a href="tel:0537717397" className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-bold transition-all">
-            <FaPhoneAlt className="text-xl" /> 053-7717397
-          </a>
-          <a href="https://www.instagram.com/nirmazar/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-bold transition-all">
-            <FaInstagram className="text-xl" /> אינסטגרם
+          <a href="https://www.instagram.com/nirmazar/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-14 h-14 rounded-full bg-pink-500 hover:bg-pink-600 text-white text-2xl shadow-lg transition-all" aria-label="אינסטגרם">
+            <FaInstagram />
           </a>
         </div>
         <div className="mt-8 text-center text-gray-600 text-sm">

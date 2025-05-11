@@ -1,25 +1,47 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <section
       id="hero-section"
       dir="rtl"
-      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden"
+      className="relative w-screen min-h-screen flex items-center justify-center overflow-hidden p-0 m-0"
     >
-      {/* Full Background Image, edge-to-edge */}
-      <Image
-        src="/nir mazar photo/ניר לרוחב.png"
-        alt="ניר מזר - מורה לנהיגה באשדוד"
-        fill
-        priority
-        className="object-cover object-center w-full h-full z-0"
-        style={{ minWidth: '100vw', minHeight: '100vh' }}
-      />
+      {/* Responsive Background Image */}
+      {isMobile ? (
+        <Image
+          src="/nir mazar photo/ניר אורך.JPG"
+          alt="ניר מזר - מורה לנהיגה באשדוד"
+          fill
+          priority
+          className="object-cover z-0 absolute left-0 top-0 w-screen h-screen min-w-0 min-h-0"
+          style={{ objectPosition: 'center top' }}
+        />
+      ) : (
+        <Image
+          src="/nir mazar photo/ניר לרוחב.png"
+          alt="ניר מזר - מורה לנהיגה באשדוד"
+          fill
+          priority
+          className="object-cover z-0 absolute left-0 top-0 w-screen h-screen min-w-0 min-h-0"
+          style={{ objectPosition: 'center 60%' }}
+        />
+      )}
       {/* Overlay for better text contrast, but more transparent */}
       <div className="absolute inset-0 bg-black/25 z-10" />
       {/* Centered Content */}
@@ -54,7 +76,7 @@ const HeroSection: React.FC = () => {
         <motion.button
           whileHover={{ scale: 1.08, boxShadow: '0 4px 24px #3b82f6aa' }}
           whileTap={{ scale: 0.97 }}
-          className="bg-gradient-to-l from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-10 py-5 rounded-full text-2xl font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50"
+          className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 rounded-full text-2xl shadow-xl transition-all focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50"
           onClick={() => {
             const contactSection = document.getElementById('contact-section');
             if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });

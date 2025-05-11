@@ -134,8 +134,12 @@ const ServicesSection: React.FC = () => {
               boxShadow: '8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff'
             }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const contactSection = document.getElementById('contact-section');
+              if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
-            צור קשר לתיאום שיעור
+            לשיעור ניסיון - צרו קשר
           </motion.button>
         </motion.div>
       </div>

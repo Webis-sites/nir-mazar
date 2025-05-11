@@ -56,7 +56,7 @@ const DrivingLessonCta: React.FC<CtaProps> = () => {
           
           <div className="flex items-center text-white opacity-90 mb-2">
             <FaPhoneAlt className="ml-2" />
-            <span>התקשרו עכשיו: 050-1234567</span>
+            <span>התקשרו עכשיו: 053-7717397</span>
           </div>
           
           <p className="text-white text-sm opacity-80">
