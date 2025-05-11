@@ -131,14 +131,14 @@ const TestimonialsSection: React.FC = () => {
             >
               <IoIosArrowForward className="text-2xl" />
             </button>
-            <button
-              onClick={handlePrev}
+              <button
+                onClick={handlePrev}
               className="bg-white/60 backdrop-blur-md border border-white/70 shadow-lg text-blue-600 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:bg-blue-100 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300"
               aria-label="המלצה קודמת"
-            >
+              >
               <IoIosArrowBack className="text-2xl" />
-            </button>
-          </div>
+              </button>
+              </div>
           <div className="flex justify-center gap-2 mt-4">
             {easyTestimonials.map((_, idx) => (
               <button
@@ -147,8 +147,8 @@ const TestimonialsSection: React.FC = () => {
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${idx === currentIndex ? 'bg-blue-500 scale-125' : 'bg-gray-300'}`}
                 aria-label={`עבור לעדות ${idx + 1}`}
               />
-            ))}
-          </div>
+                ))}
+            </div>
           <div className="text-center mt-8">
             <a
               href="https://easy.co.il/page/10148768"

@@ -17,9 +17,9 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section
-      id="hero-section"
-      dir="rtl"
+    <section 
+      id="hero-section" 
+      dir="rtl" 
       className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
       {/* Responsive Background Image */}
@@ -53,9 +53,9 @@ const HeroSection: React.FC = () => {
           className="text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg mb-4"
         >
           ניר מזר
-          <br />
+            <br />
           <span className="text-primary-400">לומדים בחיוך</span>
-        </motion.h1>
+          </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,15 +64,15 @@ const HeroSection: React.FC = () => {
         >
           מורה לנהיגה באשדוד והסביבה
         </motion.h2>
-        <motion.p
+          <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
           className="text-lg md:text-xl text-white text-center mb-8 max-w-2xl drop-shadow"
-        >
+          >
           למתחילים , מתקדמים וגם כאלה שזקוקים לריענון או עוד בטחון<br />
           לומדים בקצב שלך, ברוגע, באווירה טובה והכי חשוב - חיוך :)
-        </motion.p>
+          </motion.p>
         <motion.button
           whileHover={{ scale: 1.08, boxShadow: '0 4px 24px #3b82f6aa' }}
           whileTap={{ scale: 0.97 }}
@@ -81,7 +81,7 @@ const HeroSection: React.FC = () => {
             const contactSection = document.getElementById('contact-section');
             if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
           }}
-        >
+          >
           לשיעור ניסיון - צרו קשר
         </motion.button>
       </div>

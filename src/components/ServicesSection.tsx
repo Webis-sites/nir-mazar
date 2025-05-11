@@ -53,25 +53,25 @@ const ServicesSection: React.FC = () => {
       icon: <FaCar size={24} />,
       title: "שיעורי נהיגה למתחילים",
       description: "שיעורים מותאמים אישית לבניית ביטחון ומיומנויות בסיסיות, בקצב שלך וברוגע.",
-      imageUrl: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      imageUrl: "/nir mazar photo/f4b943ed-f370-40a4-beb0-904ccca941cf.JPG"
     },
     {
       icon: <FaSync size={24} />,
       title: "שיעורי ריענון",
       description: "למי שזקוק לעוד ביטחון, חזרה על נהיגה בטוחה, או עדכון בחוקי תנועה.",
-      imageUrl: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+      imageUrl: "/nir mazar photo/IMG_0254.JPG"
     },
     {
       icon: <FaRoad size={24} />,
       title: "תרגול נהיגה בעיר ובינעירונית",
       description: "שיעורים ממוקדים לנהיגה בסביבה עירונית ובינעירונית, כולל מצבי תנועה מורכבים.",
-      imageUrl: "https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+      imageUrl: "/nir mazar photo/nirnir.jpeg"
     },
     {
       icon: <FaGraduationCap size={24} />,
       title: "שיעורים מתקדמים ואוטומט",
       description: "לימוד נהיגה אוטומטית על רכב XPENG G6 חדשני, נוח ובטיחותי, כולל הכנה לטסט.",
-      imageUrl: "https://images.unsplash.com/photo-1600320254374-ce2d293c324e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1600320254374-ce2d293c324e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 

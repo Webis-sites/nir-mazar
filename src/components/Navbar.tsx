@@ -71,17 +71,17 @@ const Navbar: React.FC = () => {
                 className="inline-block"
               >
                 <ScrollLink
-                  to={item.id}
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
+                to={item.id}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
                   className="relative px-5 py-2 mx-1 text-[#2563eb] font-bold bg-transparent border border-transparent rounded-full transition-all duration-200 cursor-pointer select-none focus:outline-none focus:ring-0 hover:bg-white/60 hover:backdrop-blur-md hover:border-blue-200/60 hover:shadow-none hover:text-[#2563eb]"
                   activeClass="text-[#2563eb] border-blue-300/60 bg-white/80 backdrop-blur-md"
                   style={{ zIndex: 1 }}
-                >
+              >
                   <span className="relative z-10">{item.label}</span>
-                </ScrollLink>
+              </ScrollLink>
               </motion.div>
             ))}
             {/* Special CTA Button */}
@@ -133,18 +133,18 @@ const Navbar: React.FC = () => {
               className="w-full"
             >
               <ScrollLink
-                to={item.id}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                onClick={closeMenu}
+              to={item.id}
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={closeMenu}
                 className="block px-5 py-3 text-[#2563eb] font-bold bg-transparent border border-transparent rounded-full transition-all duration-200 text-right focus:outline-none focus:ring-0 hover:bg-white/60 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
                 activeClass="text-[#2563eb] border-blue-300/60 bg-white/80 backdrop-blur-md"
                 style={{ zIndex: 1 }}
-              >
+            >
                 <span className="relative z-10">{item.label}</span>
-              </ScrollLink>
+            </ScrollLink>
             </motion.div>
           ))}
           {/* Mobile CTA Button */}
