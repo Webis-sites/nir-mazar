@@ -4,7 +4,7 @@ import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
-import ProcessSection from '@/components/ProcessSection';
+import CarSection from '@/components/ProcessSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
@@ -20,7 +20,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <ProcessSection />
+        <CarSection />
         <TestimonialsSection />
         <FAQSection />
         <ContactSection />

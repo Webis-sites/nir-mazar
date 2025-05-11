@@ -267,4 +267,37 @@ const DrivingLearningProcess: React.FC = () => {
   );
 };
 
-export default DrivingLearningProcess;
+const CarSection: React.FC = () => {
+  return (
+    <section id="car-section" dir="rtl" className="py-16 px-4 bg-white">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
+        <div className="md:w-1/2 w-full flex justify-center">
+          <div className="relative w-full max-w-md h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/nir mazar photo/IMG_0254.JPG"
+              alt="XPENG G6 - רכב לימוד נהיגה"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full text-right">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            הרכב שלי: XPENG G6
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            לימוד נהיגה על רכב אוטומטי חדשני, נוח ובטיחותי – XPENG G6. הרכב מצויד בטכנולוגיות מתקדמות, נוחות מקסימלית, מערכות בטיחות מהשורה הראשונה, ומעניק לתלמידים תחושת ביטחון ושליטה מלאה על הכביש.
+          </p>
+          <ul className="list-disc pr-5 text-gray-600 space-y-2">
+            <li>רכב מודרני, שקט ונעים לנהיגה</li>
+            <li>מערכות בטיחות מתקדמות</li>
+            <li>תחושת נוחות וביטחון לתלמידים</li>
+            <li>מתאים במיוחד ללימוד נהיגה אוטומטית</li>
+            <li>חוויית נהיגה חדשנית</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CarSection;

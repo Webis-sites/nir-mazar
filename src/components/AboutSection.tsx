@@ -89,8 +89,8 @@ const AboutSection: React.FC = () => {
                 <div className="absolute inset-0 bg-green-400 rounded-lg transform translate-x-3 translate-y-3"></div>
                 <div className="relative shadow-soft rounded-lg overflow-hidden h-[400px]">
                   <img
-                    src="https://images.unsplash.com/photo-1581093196277-9f608bb3b669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="ניר מזר - מורה לנהיגה"
+                    src="/nir mazar photo/abbead6c-2432-4515-9322-97dc5c8c5ef4.JPG"
+                    alt="ניר מזר - מורה לנהיגה באשדוד"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -99,13 +99,10 @@ const AboutSection: React.FC = () => {
 
             <motion.div variants={itemVariants} className="lg:w-1/2">
               <h3 className="text-2xl font-bold mb-4 text-right text-gray-800">
-                מורה לנהיגה מקצועי באשדוד והסביבה
+                אז נעים מאוד, שמי ניר מזר, מורה לנהיגה באשדוד והסביבה.
               </h3>
-              <p className="text-gray-600 mb-6 text-right leading-relaxed">
-                שלום, שמי ניר מזר ואני מורה לנהיגה מוסמך עם ניסיון של למעלה מ-15 שנים בהוראת נהיגה. אני מתמחה בלימוד נהיגה ברכב אוטומטי, ומלווה תלמידים מתחילים ועד מתקדמים בדרך להצלחה במבחן הנהיגה המעשי.
-              </p>
               <p className="text-gray-600 mb-8 text-right leading-relaxed">
-                הגישה שלי מבוססת על סבלנות, הבנה והתאמה אישית לקצב הלמידה של כל תלמיד. אני מאמין שלימוד נהיגה צריך להיות חוויה חיובית ומעצימה, ולכן אני יוצר סביבת למידה נעימה ותומכת שמאפשרת לתלמידים להתקדם בביטחון.
+                אחרי עשרות שנים כקבלן, החלטתי לפתוח פרק חדש בחיים – פרק שבו אני בוחר ללכת עם הלב. בחרתי להוריד הילוך ממירוץ החיים, ולהקדיש את זמני למשהו שמרגש אותי באמת: אנשים. עם סבלנות אין-סופית, לב גדול ואהבה אמיתית להוראה ולמפגש האנושי, אני מלווה תלמידים בדרך לעצמאות על הכביש – ברוגע, בהקשבה, ובקצב שנכון להם. אני מלמד נהיגה אוטומטית על רכב XPENG G6 שייתן לכם את תחושת הנוחות והבטחון המקסימלית, ומציע שיעורים למתחילים, לרענון ולחיזוק הביטחון. לומדים בחיוך – לא סיסמה, אלא דרך חיים. כך אני מאמין שאוכל לעזור לכל אחד ואחת להגיע אל המטרה בלי לשכוח להנות מהדרך.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

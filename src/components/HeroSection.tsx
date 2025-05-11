@@ -40,8 +40,8 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-          alt="רקע שיעורי נהיגה"
+          src="/nir mazar photo/f4b943ed-f370-40a4-beb0-904ccca941cf.JPG"
+          alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
           className="object-cover"
@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl"
             variants={itemVariants}
           >
-            לימוד נהיגה בקצב שלך, באווירה נעימה ובסבלנות אין קץ. אצלנו לומדים לנהוג בביטחון ובהנאה, עם דגש על בטיחות ומיומנויות נהיגה מתקדמות. הצטרפו לאלפי תלמידים מרוצים שלמדו לנהוג עם חיוך.
+            למתחילים, מתקדמים וגם כאלה שזקוקים לריענון או עוד בטחון. לומדים בקצב שלך, ברוגע, באווירה טובה והכי חשוב - חיוך :)
           </motion.p>
 
           {/* CTA Buttons */}

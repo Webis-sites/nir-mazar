@@ -52,25 +52,25 @@ const ServicesSection: React.FC = () => {
     {
       icon: <FaCar size={24} />,
       title: "שיעורי נהיגה למתחילים",
-      description: "שיעורי נהיגה מותאמים אישית לנהגים חדשים, עם דגש על בניית ביטחון ומיומנויות בסיסיות בכביש.",
+      description: "שיעורים מותאמים אישית לבניית ביטחון ומיומנויות בסיסיות, בקצב שלך וברוגע.",
       imageUrl: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
-      icon: <FaRoad size={24} />,
-      title: "אימון נהיגה מתקדם",
-      description: "שיפור מיומנויות נהיגה מתקדמות, כולל נהיגה בכביש מהיר, חניה מקבילה, והתמודדות עם מצבי תנועה מורכבים.",
-      imageUrl: "https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
-    },
-    {
       icon: <FaSync size={24} />,
-      title: "קורסי ריענון",
-      description: "שיעורי ריענון לנהגים ותיקים המעוניינים לשפר את מיומנויות הנהיגה שלהם או להתעדכן בחוקי תנועה חדשים.",
+      title: "שיעורי ריענון",
+      description: "למי שזקוק לעוד ביטחון, חזרה על נהיגה בטוחה, או עדכון בחוקי תנועה.",
       imageUrl: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
     },
     {
+      icon: <FaRoad size={24} />,
+      title: "תרגול נהיגה בעיר ובינעירונית",
+      description: "שיעורים ממוקדים לנהיגה בסביבה עירונית ובינעירונית, כולל מצבי תנועה מורכבים.",
+      imageUrl: "https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+    },
+    {
       icon: <FaGraduationCap size={24} />,
-      title: "הכנה לטסט",
-      description: "אימון ממוקד לקראת מבחן הנהיגה המעשי, כולל סימולציות של מסלולי טסט והתמודדות עם לחץ.",
+      title: "שיעורים מתקדמים ואוטומט",
+      description: "לימוד נהיגה אוטומטית על רכב XPENG G6 חדשני, נוח ובטיחותי, כולל הכנה לטסט.",
       imageUrl: "https://images.unsplash.com/photo-1600320254374-ce2d293c324e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     }
   ];
@@ -87,12 +87,12 @@ const ServicesSection: React.FC = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
             <span className="relative inline-block">
-              <span className="relative z-10">השירותים שלנו</span>
+              <span className="relative z-10">השיעורים שלי</span>
               <span className="absolute bottom-1 right-0 w-full h-3 bg-green-200 opacity-50 z-0"></span>
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ניר מזר מורה לנהיגה מציע מגוון שירותי הדרכת נהיגה מותאמים אישית לצרכים שלך
+            שיעורי נהיגה למתחילים, מתקדמים, רענון, תרגול נהיגה בעיר ובינעירונית, ואוטומט – כל אחד בקצב שלו, עם חיוך.
           </p>
         </motion.div>
 
