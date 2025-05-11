@@ -80,8 +80,8 @@ const Navbar: React.FC = () => {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="relative px-4 py-2 mx-1 text-primary-600 border border-blue-400 bg-white/40 backdrop-blur-xl transition-colors duration-300 rounded-lg text-right cursor-pointer select-none drop-shadow-lg hover:bg-white/60 hover:border-blue-500"
-                  activeClass="text-primary-700 border-blue-500 drop-shadow-lg"
+                  className="relative px-4 py-2 mx-1 text-[#3b82f6] border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl transition-colors duration-300 rounded-lg text-right cursor-pointer select-none drop-shadow-lg hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
+                  activeClass="text-[#3b82f6] border-[#3b82f6] drop-shadow-lg"
                 >
                   {item.label}
                 </ScrollLink>
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
                 const contactSection = document.getElementById('contact-section');
                 if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="ml-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-blue-400 bg-white/40 backdrop-blur-xl text-primary-600 hover:bg-white/60 hover:border-blue-500"
+              className="ml-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl text-[#3b82f6] hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
             >
               לשיעור ניסיון
             </motion.button>
@@ -136,8 +136,8 @@ const Navbar: React.FC = () => {
               offset={-80}
               duration={500}
               onClick={closeMenu}
-              className="block px-4 py-3 text-primary-600 border border-blue-400 bg-white/40 backdrop-blur-xl transition-colors duration-300 rounded-lg text-right drop-shadow-lg hover:bg-white/60 hover:border-blue-500"
-              activeClass="text-primary-700 border-blue-500 drop-shadow-lg"
+              className="block px-4 py-3 text-[#3b82f6] border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl transition-colors duration-300 rounded-lg text-right drop-shadow-lg hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
+              activeClass="text-[#3b82f6] border-[#3b82f6] drop-shadow-lg"
             >
               {item.label}
             </ScrollLink>
@@ -151,7 +151,7 @@ const Navbar: React.FC = () => {
               const contactSection = document.getElementById('contact-section');
               if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="mt-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-blue-400 bg-white/40 backdrop-blur-xl text-primary-600 hover:bg-white/60 hover:border-blue-500"
+            className="mt-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl text-[#3b82f6] hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
           >
             לשיעור ניסיון
           </motion.button>

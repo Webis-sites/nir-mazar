@@ -12,10 +12,10 @@ export default function ContactSection() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = {
-      name: form.name.value,
-      phone: form.phone.value,
-      email: form.email.value,
-      message: form.message.value,
+      name: (form.elements.namedItem('name') as HTMLInputElement)?.value || '',
+      phone: (form.elements.namedItem('phone') as HTMLInputElement)?.value || '',
+      email: (form.elements.namedItem('email') as HTMLInputElement)?.value || '',
+      message: (form.elements.namedItem('message') as HTMLTextAreaElement)?.value || '',
     };
     alert(`הפרטים נשלחו בהצלחה!\n\nשם: ${data.name}\nטלפון: ${data.phone}\nאימייל: ${data.email}\nהודעה: ${data.message}`);
     form.reset();

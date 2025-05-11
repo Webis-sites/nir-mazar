@@ -95,7 +95,7 @@ const AboutSection: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <img
-                    src="/nir mazar photo/ניר אורך.JPG"
+                    src="/nir mazar photo/nir-portrait.JPG"
                     alt="ניר מזר - מורה לנהיגה באשדוד"
                     className="w-full h-full object-cover"
                   />

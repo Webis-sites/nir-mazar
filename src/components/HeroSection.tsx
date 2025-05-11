@@ -20,25 +20,25 @@ const HeroSection: React.FC = () => {
     <section
       id="hero-section"
       dir="rtl"
-      className="relative w-screen min-h-screen flex items-center justify-center overflow-hidden p-0 m-0"
+      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
       {/* Responsive Background Image */}
       {isMobile ? (
         <Image
-          src="/nir mazar photo/ניר אורך.JPG"
+          src="/nir mazar photo/nir-portrait.JPG"
           alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
-          className="object-cover z-0 absolute left-0 top-0 w-screen h-screen min-w-0 min-h-0"
+          className="object-cover z-0"
           style={{ objectPosition: 'center top' }}
         />
       ) : (
         <Image
-          src="/nir mazar photo/ניר לרוחב.png"
+          src="/nir mazar photo/nir-landscape.png"
           alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
-          className="object-cover z-0 absolute left-0 top-0 w-screen h-screen min-w-0 min-h-0"
+          className="object-cover z-0"
           style={{ objectPosition: 'center 60%' }}
         />
       )}
