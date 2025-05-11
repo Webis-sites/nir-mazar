@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/nir mazar photo/f4b943ed-f370-40a4-beb0-904ccca941cf.JPG"
+          src="/nir mazar photo/IMG_8277.heic"
           alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
@@ -49,10 +49,11 @@ const HeroSection: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/40" />
       </div>
 
-      {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      {/* Glassmorphism Content Container */}
+      <div className="relative z-10 flex justify-center items-center w-full h-full min-h-[90vh]">
         <motion.div
-          className="w-full max-w-3xl text-right"
+          className="w-full max-w-3xl flex flex-col items-center text-center px-6 py-10 rounded-3xl bg-white/30 backdrop-blur-2xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.18)] ring-1 ring-white/40"
+          style={{ boxShadow: '0 8px 32px 0 rgba(31,38,135,0.18)' }}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -70,7 +71,7 @@ const HeroSection: React.FC = () => {
 
           {/* Headline */}
           <motion.h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight text-center"
             variants={itemVariants}
           >
             ניר מזר <span className="text-primary-500">לומדים בחיוך</span>
@@ -80,7 +81,7 @@ const HeroSection: React.FC = () => {
 
           {/* Description */}
           <motion.p 
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl"
+            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto text-center"
             variants={itemVariants}
           >
             למתחילים, מתקדמים וגם כאלה שזקוקים לריענון או עוד בטחון. לומדים בקצב שלך, ברוגע, באווירה טובה והכי חשוב - חיוך :)
@@ -88,7 +89,7 @@ const HeroSection: React.FC = () => {
 
           {/* CTA Buttons */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-end"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
             variants={itemVariants}
           >
             <button 

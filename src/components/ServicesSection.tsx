@@ -79,7 +79,7 @@ const ServicesSection: React.FC = () => {
     <section id="services" className="py-16 px-4 bg-gray-50" dir="rtl">
       <div className="max-w-7xl mx-auto">
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-12 bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -100,10 +100,11 @@ const ServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
               viewport={{ once: true }}
+              className="bg-white/40 backdrop-blur-xl rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
             >
               <ServiceCard
                 icon={service.icon}
@@ -117,9 +118,9 @@ const ServicesSection: React.FC = () => {
 
         <motion.div 
           className="mt-16 text-center"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
           viewport={{ once: true }}
         >
           <motion.button

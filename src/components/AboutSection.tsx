@@ -87,25 +87,55 @@ const AboutSection: React.FC = () => {
             <motion.div variants={itemVariants} className="lg:w-1/2">
               <div className="relative">
                 <div className="absolute inset-0 bg-green-400 rounded-lg transform translate-x-3 translate-y-3"></div>
-                <div className="relative shadow-soft rounded-lg overflow-hidden h-[400px]">
+                <motion.div
+                  className="relative shadow-soft rounded-lg overflow-hidden h-[400px]"
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
                   <img
                     src="/nir mazar photo/abbead6c-2432-4515-9322-97dc5c8c5ef4.JPG"
                     alt="ניר מזר - מורה לנהיגה באשדוד"
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </motion.div>
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="lg:w-1/2">
-              <h3 className="text-2xl font-bold mb-4 text-right text-gray-800">
+              <motion.h3
+                className="text-2xl font-bold mb-4 text-right text-gray-800"
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
                 אז נעים מאוד, שמי ניר מזר, מורה לנהיגה באשדוד והסביבה.
-              </h3>
-              <p className="text-gray-600 mb-8 text-right leading-relaxed">
-                אחרי עשרות שנים כקבלן, החלטתי לפתוח פרק חדש בחיים – פרק שבו אני בוחר ללכת עם הלב. בחרתי להוריד הילוך ממירוץ החיים, ולהקדיש את זמני למשהו שמרגש אותי באמת: אנשים. עם סבלנות אין-סופית, לב גדול ואהבה אמיתית להוראה ולמפגש האנושי, אני מלווה תלמידים בדרך לעצמאות על הכביש – ברוגע, בהקשבה, ובקצב שנכון להם. אני מלמד נהיגה אוטומטית על רכב XPENG G6 שייתן לכם את תחושת הנוחות והבטחון המקסימלית, ומציע שיעורים למתחילים, לרענון ולחיזוק הביטחון. לומדים בחיוך – לא סיסמה, אלא דרך חיים. כך אני מאמין שאוכל לעזור לכל אחד ואחת להגיע אל המטרה בלי לשכוח להנות מהדרך.
-              </p>
+              </motion.h3>
+              <motion.div
+                className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 mb-6"
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                viewport={{ once: true }}
+              >
+                <motion.p
+                  className="text-gray-600 mb-0 text-right leading-relaxed"
+                  initial={false}
+                  animate={false}
+                >
+                  אחרי עשרות שנים כקבלן, החלטתי לפתוח פרק חדש בחיים – פרק שבו אני בוחר ללכת עם הלב. בחרתי להוריד הילוך ממירוץ החיים, ולהקדיש את זמני למשהו שמרגש אותי באמת: אנשים. עם סבלנות אין-סופית, לב גדול ואהבה אמיתית להוראה ולמפגש האנושי, אני מלווה תלמידים בדרך לעצמאות על הכביש – ברוגע, בהקשבה, ובקצב שנכון להם. אני מלמד נהיגה אוטומטית על רכב XPENG G6 שייתן לכם את תחושת הנוחות והבטחון המקסימלית, ומציע שיעורים למתחילים, לרענון ולחיזוק הביטחון. לומדים בחיוך – לא סיסמה, אלא דרך חיים. כך אני מאמין שאוכל לעזור לכל אחד ואחת להגיע אל המטרה בלי לשכוח להנות מהדרך.
+                </motion.p>
+              </motion.div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <motion.div
+                className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
                 <Feature
                   icon={<FaGraduationCap size={24} />}
                   title="ניסיון מקצועי"
@@ -126,11 +156,15 @@ const AboutSection: React.FC = () => {
                   title="בטיחות מעל הכל"
                   description="דגש על נהיגה בטוחה והקניית הרגלי נהיגה נכונים לכל החיים."
                 />
-              </div>
+              </motion.div>
 
               <motion.div 
                 variants={itemVariants}
                 className="mt-8 text-right"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
               >
                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-soft transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
                   צור קשר לשיעור ניסיון

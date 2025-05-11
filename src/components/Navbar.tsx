@@ -14,11 +14,13 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   const navItems: NavItem[] = [
-    { id: 'about', label: 'אודות' },
-    { id: 'services', label: 'שירותים' },
-    { id: 'testimonials', label: 'המלצות' },
-    { id: 'faq', label: 'שאלות נפוצות' },
-    { id: 'contact', label: 'צור קשר' },
+    { id: 'hero-section', label: 'דף הבית' },
+    { id: 'about-section', label: 'אודות' },
+    { id: 'services', label: 'שיעורים' },
+    { id: 'car-section', label: 'הרכב' },
+    { id: 'testimonials-section', label: 'המלצות' },
+    { id: 'faq-section', label: 'שאלות נפוצות' },
+    { id: 'contact-section', label: 'צור קשר' },
   ];
 
   useEffect(() => {
@@ -48,11 +50,7 @@ const Navbar: React.FC = () => {
     <nav
       id="navbar"
       dir="rtl"
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white shadow-md py-2'
-          : 'bg-white/90 backdrop-blur-sm py-4'
-      }`}
+      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 bg-white/60 backdrop-blur-xl shadow-md py-2`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">

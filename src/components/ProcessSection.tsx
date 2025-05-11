@@ -271,30 +271,50 @@ const CarSection: React.FC = () => {
   return (
     <section id="car-section" dir="rtl" className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
-        <div className="md:w-1/2 w-full flex justify-center">
-          <div className="relative w-full max-w-md h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+        <motion.div
+          className="md:w-1/2 w-full flex justify-center"
+          style={{ zIndex: 2 }}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="relative w-full max-w-md h-72 md:h-96 rounded-3xl overflow-hidden shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 bg-white/40 backdrop-blur-xl flex items-center justify-center">
             <img
               src="/nir mazar photo/IMG_0254.JPG"
               alt="XPENG G6 - רכב לימוד נהיגה"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-3xl"
+              style={{ mixBlendMode: 'multiply' }}
             />
           </div>
-        </div>
-        <div className="md:w-1/2 w-full text-right">
+        </motion.div>
+        <motion.div
+          className="md:w-1/2 w-full text-right bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
             הרכב שלי: XPENG G6
           </h2>
           <p className="text-lg text-gray-700 mb-6">
             לימוד נהיגה על רכב אוטומטי חדשני, נוח ובטיחותי – XPENG G6. הרכב מצויד בטכנולוגיות מתקדמות, נוחות מקסימלית, מערכות בטיחות מהשורה הראשונה, ומעניק לתלמידים תחושת ביטחון ושליטה מלאה על הכביש.
           </p>
-          <ul className="list-disc pr-5 text-gray-600 space-y-2">
+          <motion.ul
+            className="list-disc pr-5 text-gray-600 space-y-2"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <li>רכב מודרני, שקט ונעים לנהיגה</li>
             <li>מערכות בטיחות מתקדמות</li>
             <li>תחושת נוחות וביטחון לתלמידים</li>
             <li>מתאים במיוחד ללימוד נהיגה אוטומטית</li>
             <li>חוויית נהיגה חדשנית</li>
-          </ul>
-        </div>
+          </motion.ul>
+        </motion.div>
       </div>
     </section>
   );
