@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-green-400 rounded-lg transform translate-x-3 translate-y-3"></div>
                 <motion.div
-                  className="relative shadow-soft rounded-lg overflow-hidden h-[400px]"
+                  className="relative shadow-soft rounded-lg overflow-hidden h-[400px] bg-white/40 backdrop-blur-xl"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
@@ -114,7 +114,7 @@ const AboutSection: React.FC = () => {
                 אז נעים מאוד, שמי ניר מזר, מורה לנהיגה באשדוד והסביבה.
               </motion.h3>
               <motion.div
-                className="rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 mb-6"
+                className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] mb-6"
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}

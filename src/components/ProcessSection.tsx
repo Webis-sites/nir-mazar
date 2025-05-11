@@ -289,7 +289,7 @@ const CarSection: React.FC = () => {
           </div>
         </motion.div>
         <motion.div
-          className="md:w-1/2 w-full text-right rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
+          className="md:w-1/2 w-full text-right bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)]"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}

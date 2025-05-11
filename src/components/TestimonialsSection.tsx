@@ -117,7 +117,7 @@ const TestimonialsSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -40 }}
               transition={{ duration: 0.7 }}
-              className="rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 flex flex-col items-center text-center min-h-[220px] max-w-xl w-full"
+              className="rounded-3xl bg-white/40 backdrop-blur-xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] flex flex-col items-center text-center min-h-[220px] max-w-xl w-full"
             >
               <div className="font-bold text-lg text-blue-700 mb-2">{easyTestimonials[currentIndex].name}</div>
               <div className="text-gray-700 text-base whitespace-pre-line">{easyTestimonials[currentIndex].text}</div>

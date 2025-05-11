@@ -14,7 +14,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, imageUrl }) => {
   return (
     <motion.div
-      className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full"
+      className="bg-white/40 backdrop-blur-xl rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full"
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}

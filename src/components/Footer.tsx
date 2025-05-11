@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
     <footer 
       id="footer" 
       dir="rtl" 
-      className="bg-gray-100 text-gray-800 pt-10 pb-6 shadow-inner"
+      className="bg-white/40 backdrop-blur-xl text-gray-800 pt-10 pb-6 shadow-inner"
       style={{ 
         boxShadow: 'inset 0 5px 15px rgba(0, 0, 0, 0.1)'
       }}
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center justify-end mb-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="p-3 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 inline-flex items-center"
+                className="p-3 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] inline-flex items-center"
               >
                 <img 
                   src="/nir mazar photo/nir-portrait.JPG" 
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <motion.a
                 href="tel:0537717397"
-                className="flex items-center justify-end p-3 rounded-lg bg-white/60 backdrop-blur-xl hover:bg-white/80 transition-all"
+                className="flex items-center justify-end p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
                 whileHover={{ scale: 1.02 }}
               >
                 <span className="ml-2">053-7717397</span>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </motion.a>
               <motion.a
                 href="mailto:Mazarnir12@gmail.com"
-                className="flex items-center justify-end p-3 rounded-lg bg-white/60 backdrop-blur-xl hover:bg-white/80 transition-all"
+                className="flex items-center justify-end p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
                 whileHover={{ scale: 1.02 }}
               >
                 <span className="ml-2">Mazarnir12@gmail.com</span>
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/60 backdrop-blur-xl text-gray-700 hover:text-primary transition-colors"
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/40 backdrop-blur-xl text-gray-700 hover:text-primary transition-colors"
                     whileHover={{ y: -3 }}
                   >
                     {social.icon}
