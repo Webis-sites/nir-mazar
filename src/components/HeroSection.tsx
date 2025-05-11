@@ -1,122 +1,67 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaCarSide, FaPhoneAlt } from 'react-icons/fa';
 
 const HeroSection: React.FC = () => {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
-
   return (
-    <section 
-      id="hero-section" 
-      dir="rtl" 
-      className="relative w-full min-h-[90vh] overflow-hidden bg-gray-100"
+    <section
+      id="hero-section"
+      dir="rtl"
+      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/nir mazar photo/IMG_8277.heic"
-          alt="ניר מזר - מורה לנהיגה באשדוד"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/40" />
-      </div>
-
-      {/* Glassmorphism Content Container */}
-      <div className="relative z-10 flex justify-center items-center w-full h-full min-h-[90vh]">
-        <motion.div
-          className="w-full max-w-3xl flex flex-col items-center text-center px-6 py-10 rounded-3xl bg-white/30 backdrop-blur-2xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.18)] ring-1 ring-white/40"
-          style={{ boxShadow: '0 8px 32px 0 rgba(31,38,135,0.18)' }}
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
+      {/* Full Background Image, edge-to-edge */}
+      <Image
+        src="/nir mazar photo/ניר לרוחב.png"
+        alt="ניר מזר - מורה לנהיגה באשדוד"
+        fill
+        priority
+        className="object-cover object-center w-full h-full z-0"
+        style={{ minWidth: '100vw', minHeight: '100vh' }}
+      />
+      {/* Overlay for better text contrast, but more transparent */}
+      <div className="absolute inset-0 bg-black/25 z-10" />
+      {/* Centered Content */}
+      <div className="relative z-20 flex flex-col items-center justify-center w-full px-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg mb-4"
         >
-          {/* Decorative Element - Steering Wheel */}
-          <motion.div 
-            className="mb-6 inline-block"
-            variants={itemVariants}
-            whileHover={{ rotate: 90, transition: { duration: 0.5 } }}
-          >
-            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-full shadow-neumorphic-light inline-block">
-              <FaCarSide className="text-5xl text-secondary-500" />
-            </div>
-          </motion.div>
-
-          {/* Headline */}
-          <motion.h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight text-center"
-            variants={itemVariants}
-          >
-            ניר מזר <span className="text-primary-500">לומדים בחיוך</span>
-            <br />
-            <span className="text-3xl md:text-4xl">מורה לנהיגה באשדוד והסביבה</span>
-          </motion.h1>
-
-          {/* Description */}
-          <motion.p 
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto text-center"
-            variants={itemVariants}
-          >
-            למתחילים, מתקדמים וגם כאלה שזקוקים לריענון או עוד בטחון. לומדים בקצב שלך, ברוגע, באווירה טובה והכי חשוב - חיוך :)
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            variants={itemVariants}
-          >
-            <button 
-              className="bg-secondary-500 hover:bg-secondary-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-neumorphic-dark transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-secondary-300 focus:ring-opacity-50 flex items-center justify-center gap-2"
-            >
-              <span>לשיעור ניסיון</span>
-              <FaCarSide className="text-xl" />
-            </button>
-            
-            <button 
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg text-lg font-bold shadow-neumorphic-light transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-30 flex items-center justify-center gap-2"
-            >
-              <span>צור קשר</span>
-              <FaPhoneAlt className="text-xl" />
-            </button>
-          </motion.div>
-
-          {/* Additional Info */}
-          <motion.div 
-            className="mt-12 bg-white/10 backdrop-blur-sm p-4 rounded-lg shadow-neumorphic-light inline-block"
-            variants={itemVariants}
-          >
-            <p className="text-white text-sm md:text-base">
-              שיעורי נהיגה אוטומטית | מחירים אטרקטיביים | גמישות בשעות
-            </p>
-          </motion.div>
-        </motion.div>
+          ניר מזר
+          <br />
+          <span className="text-primary-400">לומדים בחיוך</span>
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-2xl md:text-3xl font-semibold text-white text-center mb-4 drop-shadow"
+        >
+          מורה לנהיגה באשדוד והסביבה
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="text-lg md:text-xl text-white text-center mb-8 max-w-2xl drop-shadow"
+        >
+          למתחילים , מתקדמים וגם כאלה שזקוקים לריענון או עוד בטחון<br />
+          לומדים בקצב שלך, ברוגע, באווירה טובה והכי חשוב - חיוך :)
+        </motion.p>
+        <motion.button
+          whileHover={{ scale: 1.08, boxShadow: '0 4px 24px #3b82f6aa' }}
+          whileTap={{ scale: 0.97 }}
+          className="bg-gradient-to-l from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-10 py-5 rounded-full text-2xl font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50"
+          onClick={() => {
+            const contactSection = document.getElementById('contact-section');
+            if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          לשיעור ניסיון - צרו קשר
+        </motion.button>
       </div>
     </section>
   );

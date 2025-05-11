@@ -124,11 +124,19 @@ const TestimonialsSection: React.FC = () => {
             </motion.div>
           </div>
           <div className="flex justify-center gap-4 mt-6">
-            <button onClick={handlePrev} className="bg-white/70 hover:bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center shadow transition-all">
-              <IoIosArrowBack className="text-xl" />
+            <button
+              onClick={handlePrev}
+              className="bg-white/60 backdrop-blur-md border border-white/70 shadow-lg text-blue-600 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:bg-blue-100 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              aria-label="המלצה קודמת"
+            >
+              <IoIosArrowBack className="text-2xl" />
             </button>
-            <button onClick={handleNext} className="bg-white/70 hover:bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center shadow transition-all">
-              <IoIosArrowForward className="text-xl" />
+            <button
+              onClick={handleNext}
+              className="bg-white/60 backdrop-blur-md border border-white/70 shadow-lg text-blue-600 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:bg-blue-100 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              aria-label="המלצה הבאה"
+            >
+              <IoIosArrowForward className="text-2xl" />
             </button>
           </div>
           <div className="flex justify-center gap-2 mt-4">
