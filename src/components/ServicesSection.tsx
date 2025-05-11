@@ -65,13 +65,13 @@ const ServicesSection: React.FC = () => {
       icon: <FaRoad size={24} />,
       title: "תרגול נהיגה בעיר ובינעירונית",
       description: "שיעורים ממוקדים לנהיגה בסביבה עירונית ובינעירונית, כולל מצבי תנועה מורכבים.",
-      imageUrl: "/nir mazar photo/nirnir.jpeg"
+      imageUrl: "/nir mazar photo/niro1.png"
     },
     {
       icon: <FaGraduationCap size={24} />,
       title: "שיעורים מתקדמים ואוטומט",
       description: "לימוד נהיגה אוטומטית על רכב XPENG G6 חדשני, נוח ובטיחותי, כולל הכנה לטסט.",
-      imageUrl: "https://images.unsplash.com/photo-1600320254374-ce2d293c324e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/nir mazar photo/nirnir.jpeg"
     }
   ];
 
