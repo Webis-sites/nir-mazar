@@ -17,11 +17,7 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     { id: 'hero-section', label: 'דף הבית' },
     { id: 'about-section', label: 'אודות' },
-    { id: 'services', label: 'שיעורים' },
-    { id: 'car-section', label: 'הרכב' },
-    { id: 'testimonials-section', label: 'המלצות' },
     { id: 'faq-section', label: 'שאלות נפוצות' },
-    { id: 'contact-section', label: 'צור קשר' },
   ];
 
   useEffect(() => {
@@ -70,8 +66,8 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => (
               <motion.div
                 key={item.id}
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.96 }}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
                 className="inline-block"
               >
                 <ScrollLink
@@ -80,24 +76,26 @@ const Navbar: React.FC = () => {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="relative px-4 py-2 mx-1 text-[#3b82f6] border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl transition-colors duration-300 rounded-lg text-right cursor-pointer select-none drop-shadow-lg hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
-                  activeClass="text-[#3b82f6] border-[#3b82f6] drop-shadow-lg"
+                  className="relative px-5 py-2 mx-1 text-[#2563eb] font-bold bg-transparent border border-transparent rounded-full transition-all duration-200 cursor-pointer select-none focus:outline-none focus:ring-0 hover:bg-white/60 hover:backdrop-blur-md hover:border-blue-200/60 hover:shadow-none hover:text-[#2563eb]"
+                  activeClass="text-[#2563eb] border-blue-300/60 bg-white/80 backdrop-blur-md"
+                  style={{ zIndex: 1 }}
                 >
-                  {item.label}
+                  <span className="relative z-10">{item.label}</span>
                 </ScrollLink>
               </motion.div>
             ))}
             {/* Special CTA Button */}
             <motion.button
-              whileHover={{ scale: 1.12, boxShadow: '0 0 0 4px #3b82f6aa' }}
+              whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               onClick={() => {
                 const contactSection = document.getElementById('contact-section');
                 if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="ml-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl text-[#3b82f6] hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
+              className="ml-4 px-7 py-2 rounded-full text-lg font-bold bg-transparent border border-transparent text-[#2563eb] transition-all duration-200 focus:outline-none focus:ring-0 hover:bg-white/80 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
+              style={{ zIndex: 1 }}
             >
-              לשיעור ניסיון
+              <span className="relative z-10">לשיעור ניסיון</span>
             </motion.button>
           </div>
 
@@ -126,34 +124,42 @@ const Navbar: React.FC = () => {
             : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="container mx-auto px-4 flex flex-col space-y-3 bg-black/70 rounded-lg p-4">
+        <div className="container mx-auto px-4 flex flex-col space-y-3 bg-black/60 rounded-3xl p-4 shadow-xl">
           {navItems.map((item) => (
-            <ScrollLink
+            <motion.div
               key={item.id}
-              to={item.id}
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onClick={closeMenu}
-              className="block px-4 py-3 text-[#3b82f6] border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl transition-colors duration-300 rounded-lg text-right drop-shadow-lg hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
-              activeClass="text-[#3b82f6] border-[#3b82f6] drop-shadow-lg"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="w-full"
             >
-              {item.label}
-            </ScrollLink>
+              <ScrollLink
+                to={item.id}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onClick={closeMenu}
+                className="block px-5 py-3 text-[#2563eb] font-bold bg-transparent border border-transparent rounded-full transition-all duration-200 text-right focus:outline-none focus:ring-0 hover:bg-white/60 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
+                activeClass="text-[#2563eb] border-blue-300/60 bg-white/80 backdrop-blur-md"
+                style={{ zIndex: 1 }}
+              >
+                <span className="relative z-10">{item.label}</span>
+              </ScrollLink>
+            </motion.div>
           ))}
           {/* Mobile CTA Button */}
           <motion.button
-            whileHover={{ scale: 1.08, boxShadow: '0 0 0 4px #3b82f6aa' }}
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => {
               closeMenu();
               const contactSection = document.getElementById('contact-section');
               if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="mt-4 px-6 py-3 rounded-full text-lg font-bold shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 border border-[#3b82f6] bg-[#e3f0fd] backdrop-blur-xl text-[#3b82f6] hover:bg-[#d0e7fb] hover:border-[#3b82f6]"
+            className="mt-4 px-7 py-2 rounded-full text-lg font-bold bg-transparent border border-transparent text-[#2563eb] transition-all duration-200 focus:outline-none focus:ring-0 hover:bg-white/80 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
+            style={{ zIndex: 1 }}
           >
-            לשיעור ניסיון
+            <span className="relative z-10">לשיעור ניסיון</span>
           </motion.button>
         </div>
       </div>

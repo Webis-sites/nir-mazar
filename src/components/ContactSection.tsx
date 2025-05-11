@@ -37,7 +37,7 @@ export default function ContactSection() {
           <textarea name="message" placeholder="הודעה" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" rows={4} required />
           <button
             type="submit"
-            className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 rounded-full text-lg shadow-xl transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:ring-opacity-50 hover:scale-105 hover:shadow-[0_0_0_4px_#3b82f6aa,0_8px_32px_0_rgba(31,38,135,0.18)]"
+            className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold py-3 rounded-full text-lg shadow-lg transition-colors duration-200 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 border-0"
           >
             שלח פרטים
           </button>
