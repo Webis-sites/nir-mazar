@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center justify-end mb-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="bg-white/40 backdrop-blur-xl p-3 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 inline-flex items-center"
+                className="p-3 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 inline-flex items-center"
               >
                 <img 
                   src="/nir mazar photo/nir-portrait.JPG" 

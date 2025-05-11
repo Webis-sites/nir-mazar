@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaCar, FaRoad, FaSync, FaGraduationCap } from 'react-icons/fa';
 
 interface ServiceCardProps {
@@ -14,7 +14,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, imageUrl }) => {
   return (
     <motion.div
-      className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full"
+      className="rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full"
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
@@ -48,6 +48,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, ima
 };
 
 const ServicesSection: React.FC = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const bgPosition = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   const services = [
     {
       icon: <FaCar size={24} />,
@@ -76,10 +80,19 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-16 px-4 bg-gray-50" dir="rtl">
-      <div className="max-w-7xl mx-auto">
+    <section id="services" className="py-16 px-4 relative overflow-hidden" dir="rtl" ref={ref}>
+      <motion.div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          background: 'none',
+        }}
+        initial={{ opacity: 0.9 }}
+        animate={{ opacity: 1 }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <motion.div 
-          className="text-center mb-12 bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
+          className="text-center mb-12 rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -104,7 +117,7 @@ const ServicesSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="bg-white/40 backdrop-blur-xl rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
+              className="rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
             >
               <ServiceCard
                 icon={service.icon}

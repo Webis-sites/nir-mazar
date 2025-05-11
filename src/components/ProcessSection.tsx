@@ -118,7 +118,7 @@ const DrivingLearningProcess: React.FC = () => {
             animate="visible"
           >
             {/* Timeline line */}
-            <div className="absolute top-10 left-0 right-0 h-1 bg-gray-200 z-0"></div>
+            <div className="absolute top-10 left-0 right-0 h-1 z-0"></div>
             
             {/* Active timeline line (grows as steps are completed) */}
             <motion.div 
@@ -142,7 +142,7 @@ const DrivingLearningProcess: React.FC = () => {
                   className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 shadow-lg transition-all duration-300
                     ${step.completed 
                       ? 'bg-blue-500 text-white' 
-                      : 'bg-white text-gray-400 border border-gray-200'
+                      : 'text-gray-400 border border-gray-200'
                     }`}
                   style={{
                     boxShadow: step.completed 
@@ -176,7 +176,7 @@ const DrivingLearningProcess: React.FC = () => {
             animate="visible"
           >
             {/* Timeline line */}
-            <div className="absolute top-0 bottom-0 right-10 w-1 bg-gray-200 z-0"></div>
+            <div className="absolute top-0 bottom-0 right-10 w-1 z-0"></div>
             
             {/* Active timeline line */}
             <motion.div 
@@ -200,7 +200,7 @@ const DrivingLearningProcess: React.FC = () => {
                   className={`w-16 h-16 rounded-full flex items-center justify-center mr-4 shadow-lg transition-all duration-300
                     ${step.completed 
                       ? 'bg-blue-500 text-white' 
-                      : 'bg-white text-gray-400 border border-gray-200'
+                      : 'text-gray-400 border border-gray-200'
                     }`}
                   style={{
                     boxShadow: step.completed 
@@ -269,7 +269,7 @@ const DrivingLearningProcess: React.FC = () => {
 
 const CarSection: React.FC = () => {
   return (
-    <section id="car-section" dir="rtl" className="py-16 px-4 bg-white">
+    <section id="car-section" dir="rtl" className="py-16 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
         <motion.div
           className="md:w-1/2 w-full flex justify-center"
@@ -279,7 +279,7 @@ const CarSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="relative w-full max-w-md h-72 md:h-96 rounded-3xl overflow-hidden shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 bg-white/40 backdrop-blur-xl flex items-center justify-center">
+          <div className="relative w-full max-w-md h-72 md:h-96 rounded-3xl overflow-hidden shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 flex items-center justify-center">
             <img
               src="/nir mazar photo/IMG_0254.JPG"
               alt="XPENG G6 - רכב לימוד נהיגה"
@@ -289,7 +289,7 @@ const CarSection: React.FC = () => {
           </div>
         </motion.div>
         <motion.div
-          className="md:w-1/2 w-full text-right bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
+          className="md:w-1/2 w-full text-right rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}

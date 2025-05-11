@@ -15,7 +15,7 @@ interface FeatureProps {
 const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => {
   return (
     <div className="flex flex-row-reverse items-start gap-3 mb-6">
-      <div className="flex-shrink-0 p-3 rounded-lg bg-blue-50 text-blue-600 shadow-soft">
+      <div className="flex-shrink-0 p-3 rounded-lg text-blue-600 shadow-soft">
         {icon}
       </div>
       <div>
@@ -114,7 +114,7 @@ const AboutSection: React.FC = () => {
                 אז נעים מאוד, שמי ניר מזר, מורה לנהיגה באשדוד והסביבה.
               </motion.h3>
               <motion.div
-                className="bg-white/40 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 mb-6"
+                className="rounded-3xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] border border-white/30 ring-1 ring-white/40 mb-6"
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}
