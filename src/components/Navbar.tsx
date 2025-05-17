@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { useIsMobile } from '@/lib/useIsMobile';
 
 interface NavItem {
   id: string;
@@ -13,6 +14,7 @@ interface NavItem {
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const isMobile = useIsMobile();
 
   const navItems: NavItem[] = [
     { id: 'hero-section', label: 'דף הבית' },

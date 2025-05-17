@@ -189,12 +189,7 @@ const DrivingLearningProcess: React.FC = () => {
             ></motion.div>
 
             {steps.map((step, index) => (
-              <motion.div
-                key={step.id}
-                ref={stepRefs[index]}
-                className="flex items-start mb-12 relative z-20"
-                variants={itemVariants}
-              >
+              <div className="flex items-start mb-12 relative z-20 flex-col sm:flex-row">
                 {/* Step circle */}
                 <div 
                   className={`w-16 h-16 rounded-full flex items-center justify-center mr-4 shadow-lg transition-all duration-300
@@ -220,7 +215,7 @@ const DrivingLearningProcess: React.FC = () => {
                     {step.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>

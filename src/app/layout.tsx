@@ -52,6 +52,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="he" dir="rtl" className={heebo.variable}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className="min-h-screen text-gray-900 font-heebo" style={{ background: 'linear-gradient(120deg, #3b82f6 0%, #ffffff 100%)', backgroundAttachment: 'fixed' }}>
         <div className="flex flex-col min-h-screen">
           <Navbar />

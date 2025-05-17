@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaCar, FaRoad, FaSync, FaGraduationCap } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -27,10 +28,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, ima
       }}
     >
       <div className="relative h-48 overflow-hidden">
-        <img 
-          src={imageUrl} 
-          alt={title} 
-          className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+        <Image 
+          src={imageUrl}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, 25vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
       </div>

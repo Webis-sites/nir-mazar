@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoChevronDownOutline } from 'react-icons/io5';
+import Image from 'next/image';
 
 interface FAQItem {
   id: string;
@@ -117,9 +118,12 @@ const FAQSection: React.FC = () => {
         }}>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <div className="w-full md:w-1/3 rounded-lg overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                alt="שיעור נהיגה" 
+              <Image 
+                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="שיעור נהיגה"
+                width={400}
+                height={192}
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="w-full h-48 object-cover"
               />
             </div>

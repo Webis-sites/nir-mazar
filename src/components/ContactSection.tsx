@@ -31,10 +31,10 @@ export default function ContactSection() {
           יש לך שאלה? רוצה לקבוע שיעור ניסיון? אשמח לשוחח!
         </p>
         <form className="grid grid-cols-1 gap-6 max-w-xl mx-auto mb-8" onSubmit={handleSubmit}>
-          <input name="name" type="text" placeholder="שם מלא" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" required />
-          <input name="phone" type="tel" placeholder="טלפון" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" required />
-          <input name="email" type="email" placeholder="אימייל (לא חובה)" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" />
-          <textarea name="message" placeholder="הודעה" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300" rows={4} required />
+          <input name="name" type="text" placeholder="שם מלא" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300 text-base md:text-lg" required />
+          <input name="phone" type="tel" placeholder="טלפון" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300 text-base md:text-lg" required />
+          <input name="email" type="email" placeholder="אימייל (לא חובה)" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300 text-base md:text-lg" />
+          <textarea name="message" placeholder="הודעה" className="border rounded-lg px-4 py-3 text-right focus:ring-2 focus:ring-primary-300 text-base md:text-lg" rows={4} required />
           <button 
             type="submit"
             className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold py-3 rounded-full text-lg shadow-lg transition-colors duration-200 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 border-0"

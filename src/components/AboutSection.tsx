@@ -5,6 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGraduationCap, FaRegSmile, FaShieldAlt } from 'react-icons/fa';
 import { MdDirectionsCar } from 'react-icons/md';
+import Image from 'next/image';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -88,16 +89,18 @@ const AboutSection: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-green-400 rounded-lg transform translate-x-3 translate-y-3"></div>
                 <motion.div
-                  className="relative shadow-soft rounded-lg overflow-hidden h-[400px] bg-white/40 backdrop-blur-xl"
+                  className="relative shadow-soft rounded-lg overflow-hidden w-full aspect-[3/4] bg-white/40 backdrop-blur-xl"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                   viewport={{ once: true }}
                 >
-                  <img
+                  <Image
                     src="/nir mazar photo/nir-portrait.JPG"
                     alt="ניר מזר - מורה לנהיגה באשדוד"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
                 </motion.div>
               </div>

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaQuoteRight } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useIsMobile } from '@/lib/useIsMobile';
 
 interface Testimonial {
   id: number;
@@ -15,6 +16,7 @@ interface Testimonial {
 }
 
 const TestimonialsSection: React.FC = () => {
+  const isMobile = useIsMobile();
   const easyTestimonials = [
     { name: 'שולי מ.', text: 'יכולה לומר שאם יש מישהו שיכול להוביל כל מי שעולה לרכב בבטחה, זה ניר. סבלנות, התאמה אישית, שיח מעניין, מקצועיות, חינוך שמבוסס ונותן את ההרגשה הכי טובה שיש. עוד בצעירותי, היה הדרך הכי מדהים שיכול להיות ולהישאר, היום נוהגת בבטחון ובעיף שזה לא פחות חשוב (עוד לפני שתחשב להיות מורה נהיגה..). אלוף✨' },
     { name: 'יונתן מ.', text: 'מעבר לזה שהוא מורה נהיגה תותח דובר בבן אדם אגדה חוויה מובטחת' },
@@ -29,25 +31,8 @@ const TestimonialsSection: React.FC = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const [autoplay, setAutoplay] = useState(true);
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      if (autoplayRef.current) {
-        clearInterval(autoplayRef.current);
-      }
-    };
-  }, []);
 
   useEffect(() => {
     if (autoplay) {
