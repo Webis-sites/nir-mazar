@@ -94,7 +94,7 @@ export default function ContactSection() {
           צור קשר
         </h2>
         <p className="text-lg mb-8 text-center text-gray-700">
-          יש לך שאלה? רוצה לקבוע שיעור ניסיון? אשמח לשוחח!
+          יש לך שאלה ? רוצה להתחיל שיעורים כבר ממחר? השאירו פרטים ואחזור אלייך עוד היום :)
         </p>
         <form className="grid grid-cols-1 gap-6 max-w-xl mx-auto mb-8" onSubmit={handleSubmit}>
           <input 

@@ -42,10 +42,10 @@ const Footer: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 gap-y-12 text-center">
           {/* Logo and Business Info */}
-          <div className="text-right">
-            <div className="flex items-center justify-end mb-4">
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center mb-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="p-3 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.10)] inline-flex items-center"
@@ -61,20 +61,20 @@ const Footer: React.FC = () => {
                 </div>
               </motion.div>
             </div>
-            <p className="mb-2 text-right">
-              מורה לנהיגה מוסמך עם ניסיון רב בהוראת נהיגה אוטומטית
+            <p className="mb-2">
+              מורה  נהיגה מוסמך לנהיגה אוטומטית
             </p>
-            <p className="text-sm text-gray-600 text-right">
+            <p className="text-sm text-gray-600">
               &copy; {currentYear} כל הזכויות שמורות לניר מזר
             </p>
           </div>
 
           {/* Navigation Links */}
-          <div className="text-right">
+          <div>
             <h3 className="text-lg font-bold mb-4 text-primary">ניווט מהיר</h3>
             <ul className="space-y-2">
               {navLinks.map((link, index) => (
-                <li key={index}>
+                <li key={index} className="flex justify-center">
                   <motion.a
                     href={link.href}
                     className="inline-flex items-center text-gray-700 hover:text-primary transition-colors"
@@ -89,12 +89,12 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="text-right">
+          <div>
             <h3 className="text-lg font-bold mb-4 text-primary">צור קשר</h3>
             <div className="space-y-3">
               <motion.a
                 href="tel:0537717397"
-                className="flex items-center justify-end p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
+                className="flex items-center justify-center p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
                 whileHover={{ scale: 1.02 }}
               >
                 <span className="ml-2">053-7717397</span>
@@ -102,13 +102,13 @@ const Footer: React.FC = () => {
               </motion.a>
               <motion.a
                 href="mailto:Mazarnir12@gmail.com"
-                className="flex items-center justify-end p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
+                className="flex items-center justify-center p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
                 whileHover={{ scale: 1.02 }}
               >
                 <span className="ml-2">Mazarnir12@gmail.com</span>
                 <FaEnvelope className="text-secondary" />
               </motion.a>
-              <div className="flex justify-end space-x-4 space-x-reverse mt-4">
+              <div className="flex justify-center space-x-4 space-x-reverse mt-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}

@@ -36,33 +36,34 @@ const DrivingLessonCta: React.FC<CtaProps> = () => {
         ></div>
       </div>
 
-      <div className="relative z-10 px-6 py-12 md:py-16 md:px-12 flex flex-col md:flex-row items-center justify-between">
-        <div className="text-right mb-8 md:mb-0 md:w-2/3">
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-white mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            מוכנים לצאת לדרך? הצעד הראשון לרישיון נהיגה מתחיל כאן!
-          </motion.h2>
-          
-          <motion.p 
-            className="text-white text-lg md:text-xl opacity-90 mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            עם ניר מזר, מורה לנהיגה אוטומטית מנוסה, תלמדו לנהוג בביטחון ובהנאה. 
-            הצטרפו למאות תלמידים מרוצים שכבר קיבלו רישיון בהצלחה!
-          </motion.p>
-          
-          <div className="flex items-center text-white opacity-90 mb-2">
+      <div className="relative z-10 px-6 py-12 md:py-16 md:px-12 flex flex-col items-center justify-center text-center">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold text-white mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          מוכנים לצאת לדרך? הצעד הראשון לרישיון נהיגה מתחיל כאן!
+        </motion.h2>
+        
+        <motion.p 
+          className="text-white text-lg md:text-xl opacity-90 mb-6 text-center md:text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          עם ניר מזר תלמדו לנהוג בביטחון, ברוגע ובאווירה טובה.<br />
+          גמישות בשעות – אתם קובעים את הזמנים שנוחים לכם, אני מתאים את עצמי אליכם.<br />
+          הצטרפו לתלמידים מרוצים שכבר קיבלו רישיון בהצלחה!
+        </motion.p>
+        
+        <div className="w-full mb-8">
+          <div className="flex items-center justify-center text-white opacity-90 mb-2">
             <FaPhoneAlt className="ml-2" />
             <span>התקשרו עכשיו: 053-7717397</span>
           </div>
           
-          <p className="text-white text-sm opacity-80">
+          <p className="text-white text-sm opacity-80 text-center">
             * מספר המקומות מוגבל, הבטיחו את מקומכם עוד היום!
           </p>
         </div>
