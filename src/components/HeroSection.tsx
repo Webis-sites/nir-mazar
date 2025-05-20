@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
           fill
           priority
           className="object-cover z-0"
-          style={{ objectPosition: 'center 60%' }}
+          style={{ objectPosition: 'center top' }}
         />
       )}
       {/* Overlay for better text contrast, but more transparent */}
