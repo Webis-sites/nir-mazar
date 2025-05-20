@@ -90,7 +90,7 @@ const DrivingLessonCta: React.FC<CtaProps> = () => {
             >
               <span className="relative z-10 flex items-center justify-center">
                 <FaCar className="ml-2" />
-                לשיעור ניסיון
+                השאירו פרטים ואחזור אליכם עוד היום
               </span>
               <motion.div
                 className="absolute inset-0 bg-blue-500"

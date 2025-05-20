@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useIsMobile } from '@/lib/useIsMobile';
+import Image from 'next/image';
 
 interface NavItem {
   id: string;
@@ -58,7 +59,16 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-bold text-white drop-shadow-lg">
+            <Image
+              src="/nir mazar photo/logo lamed.jpeg"
+              alt="לוגו לומדים"
+              width={38}
+              height={38}
+              className="ml-2 rounded-full bg-white shadow"
+              style={{objectFit: 'contain'}}
+              priority
+            />
+            <h1 className="text-xl md:text-2xl font-bold text-white drop-shadow-lg flex items-center">
               <span className="text-[#3b82f6]">ניר מזר</span> מורה לנהיגה
             </h1>
           </div>
@@ -97,7 +107,7 @@ const Navbar: React.FC = () => {
               className="ml-4 px-7 py-2 rounded-full text-lg font-bold bg-transparent border border-transparent text-[#2563eb] transition-all duration-200 focus:outline-none focus:ring-0 hover:bg-white/80 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
               style={{ zIndex: 1 }}
             >
-              <span className="relative z-10">לשיעור ניסיון</span>
+              <span className="relative z-10">השאירו פרטים ואחזור אליכם עוד היום</span>
             </motion.button>
           </div>
 
@@ -161,7 +171,7 @@ const Navbar: React.FC = () => {
             className="mt-4 px-7 py-2 rounded-full text-lg font-bold bg-transparent border border-transparent text-[#2563eb] transition-all duration-200 focus:outline-none focus:ring-0 hover:bg-white/80 hover:backdrop-blur-md hover:border-blue-200/60 hover:text-[#2563eb]"
             style={{ zIndex: 1 }}
           >
-            <span className="relative z-10">לשיעור ניסיון</span>
+            <span className="relative z-10">השאירו פרטים ואחזור אליכם עוד היום</span>
           </motion.button>
         </div>
       </div>

@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
       {/* Responsive Background Image */}
       {isMobile ? (
         <Image
-          src="/nir mazar photo/nir-portrait.JPG"
+          src="/nir mazar photo/nirnir.jpeg"
           alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
         />
       ) : (
         <Image
-          src="/nir mazar photo/nir-landscape.png"
+          src="/nir mazar photo/nirnir.jpeg"
           alt="ניר מזר - מורה לנהיגה באשדוד"
           fill
           priority
@@ -74,7 +74,7 @@ const HeroSection: React.FC = () => {
             if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
           }}
           >
-          לשיעור ניסיון - צרו קשר
+          השאירו פרטים ואחזור אליכם עוד היום
         </motion.button>
       </div>
     </section>

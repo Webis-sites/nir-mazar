@@ -176,7 +176,7 @@ const AboutSection: React.FC = () => {
                     if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  לשיעור ניסיון - צרו קשר
+                  השאירו פרטים ואחזור אליכם עוד היום
                 </button>
               </motion.div>
             </motion.div>
