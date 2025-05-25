@@ -158,7 +158,7 @@ export default function ContactSection() {
           </a>
         </div>
         <div className="mt-8 text-center text-gray-600 text-sm">
-          <span>או שלחו מייל: <a href="mailto:Mazarnir12@gmail.com" className="underline text-blue-600">Mazarnir12@gmail.com</a></span>
+          <span>או שלחו מייל: <a href="mailto:nirmazardrive@gmail.com" className="underline text-blue-600">nirmazardrive@gmail.com</a></span>
         </div>
       </div>
     </section>
