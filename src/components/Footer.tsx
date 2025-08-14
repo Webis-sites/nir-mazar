@@ -101,11 +101,11 @@ const Footer: React.FC = () => {
                 <FaPhone className="text-secondary" />
               </motion.a>
               <motion.a
-                href="mailto:nirmazardrive@gmail.com"
+                href="mailto:mazarnir12@gmail.com"
                 className="flex items-center justify-center p-3 rounded-lg bg-white/40 backdrop-blur-xl hover:bg-white/60 transition-all"
                 whileHover={{ scale: 1.02 }}
               >
-                <span className="ml-2">nirmazardrive@gmail.com</span>
+                <span className="ml-2">mazarnir12@gmail.com</span>
                 <FaEnvelope className="text-secondary" />
               </motion.a>
               <div className="flex justify-center space-x-4 space-x-reverse mt-4">
