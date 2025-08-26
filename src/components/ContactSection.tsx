@@ -5,7 +5,7 @@ import { FaWhatsapp, FaPhoneAlt, FaInstagram } from 'react-icons/fa';
 
 // פונקציה לבדיקת תקינות האימייל
 const isValidEmail = (email: string): boolean => {
-  if (!email) return true; // אימייל לא חובה
+  if (!email) return true;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 };
