@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Heebo } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import LegalCenter from '@/components/LegalCenter';
 
 // Initialize Heebo font with Hebrew support
 const heebo = Heebo({
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
           <main className="flex-grow">{children}</main>
         </div>
+        <LegalCenter />
       </body>
     </html>
   );

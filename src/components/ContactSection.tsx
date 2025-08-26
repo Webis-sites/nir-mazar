@@ -33,6 +33,18 @@ export default function ContactSection() {
     const email = (form.elements.namedItem('email') as HTMLInputElement)?.value || '';
     const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value || '';
     
+    // בדיקת הסכמה משפטית
+    const consent = form.querySelector<HTMLInputElement>('input[name="legalConsent"]');
+    if (!consent?.checked) { 
+      e.preventDefault(); 
+      setStatus({ success: false, error: 'יש לאשר את מדיניות הפרטיות ותנאי השימוש' }); 
+      setIsLoading(false);
+      return; 
+    }
+    
+    // הוספת timestamp להסכמה
+    (form.querySelector('input[name="consentAt"]') as HTMLInputElement).value = new Date().toISOString();
+    
     // בדיקת תקינות הנתונים
     if (!name.trim()) {
       setStatus({ success: false, error: 'שדה שם הוא חובה' });
@@ -128,6 +140,25 @@ export default function ContactSection() {
             required 
             disabled={isLoading}
           />
+          
+          <label className="flex items-start gap-2 text-sm mt-3">
+            <input type="checkbox" name="legalConsent" required />
+            <span>
+              אני מאשר/ת את{" "}
+              <button type="button" className="underline" onClick={() => window.openLegal && window.openLegal("privacy")}>
+                מדיניות הפרטיות
+              </button>
+              {" "}ו{" "}
+              <button type="button" className="underline" onClick={() => window.openLegal && window.openLegal("terms")}>
+                תנאי השימוש
+              </button>
+              .
+            </span>
+          </label>
+
+          <input type="hidden" name="consentAt" />
+          <input type="hidden" name="privacyVersion" value="2025-08" />
+          <input type="hidden" name="termsVersion" value="2025-08" />
           
           {status.error && (
             <div className="bg-red-50 text-red-800 p-4 rounded-lg border border-red-200">

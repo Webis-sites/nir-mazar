@@ -127,6 +127,14 @@ const Footer: React.FC = () => {
         
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
           <p>האתר נבנה ע״י ניר מזר - מורה לנהיגה אוטומטית</p>
+          <div className="flex gap-3 justify-center mt-3">
+            <button type="button" className="text-xs underline" onClick={() => window.openLegal && window.openLegal("privacy")}>
+              מדיניות פרטיות
+            </button>
+            <button type="button" className="text-xs underline" onClick={() => window.openLegal && window.openLegal("terms")}>
+              תנאי שימוש
+            </button>
+          </div>
         </div>
       </div>
     </footer>
