@@ -193,9 +193,3 @@ const AboutSection: React.FC = () => {
 };
 
 export default AboutSection;
-
-// Add this to your global CSS or Tailwind config
-// .shadow-soft {
-//   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.08), 
-//              -6px -6px 12px rgba(255, 255, 255, 0.8);
-// }
